@@ -133,3 +133,12 @@ Docker Study
 	
 	
 - docker build -t <만들 도커 이미지 이름> <Dockerfile이 위치한 폴더 디렉토리>
+
+
+- Docker Hub (이미지 저장소)
+	- docker login
+	- docker push <image>
+	- docker pull <image>
+	- 무료 시 Public (한개만 Private)
+	- 유료 시 Private 가능
+	
