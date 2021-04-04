@@ -142,3 +142,15 @@ Docker Study
 	- 무료 시 Public (한개만 Private)
 	- 유료 시 Private 가능
 	
+- 배포하기
+	- docker run
+
+
+- 더보기 
+	- 이미지 만들기 위한 쉘 스크립트 & 환경 변수 사용
+	- CI/CD 자동빌드, 자동배포, blue & green 배포 / 무중단 배포
+	- 모니터링 / 로그
+	- 가상 네트워크
+	- 보안
+	- 쿠버네티스
+	- 이스티오 서비스 매쉬(istio)
