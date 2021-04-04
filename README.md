@@ -112,7 +112,7 @@ Docker Study
 
 - Dockerfile
 	- RUN : 쉘 명령어 실행
-	- CMD : 컨테이너 기본 실행 명령어 (EntryPoint 인자로 사용)
+	- CMD : 컨테이너 실행 명령어 (EntryPoint 인자로 사용)
 	- EXPOSE : 오픈되는 포트 정보
 	- ENV : 환경변수 설정
 	- ADD : 파일 또는 디렉토리 추가 URL/ZIP 사용 가능
@@ -122,12 +122,14 @@ Docker Study
 	- ARGS : 빌드타임 환경변수 설정
 	- LABEL : Key / Value 데이터
 	- ONBUILD : 다른 빌드의 베이스로 사용될 때 사용하는 명령어 
-	- COPY : 파일 또는 디렉토리 추가
+	- COPY : 로컬에 있는 파일 또는 디렉토리를 이미지에 추가
 	- ENTRYPOINT : 컨테이너 기본 실행 명령어
+	- FROM : Base Image 설정 
+	- WORKDIR : 작업 디렉토리 지정
 
 - DokcerFile 장점
 	- DockerFile을 통해 설치하게 되면 설치 기록을 명확하게 파악할 수 있어 관리하기 용이하고 도커 이미지를 만들 때 무엇이 설치되고 실행되었는지 알 수 있다.
 	- DokcerFile을 통해 해당 이미지를 업데이트하거나 수정하기에 용이하다.
 	
 	
-
+- docker build -t <만들 도커 이미지 이름> <Dockerfile이 위치한 폴더 디렉토리>
