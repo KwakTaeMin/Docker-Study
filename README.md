@@ -96,4 +96,38 @@ Docker Study
 	- docker compose
 		- docker 명령어들을 yml 파일로 만들어 컨테이너 여러개 또한 관리가 가능	 
 		- docker-compose up
-		- docker-compose down 		
+		- docker-compose down 	
+
+
+- 이미지
+	- 레이어드 파일 시스템 기반
+	- AUFS, BTRFS, Overlayfs
+	- 이미지는 프로세스들가 실행되는 파일들의 집합 (환경)
+	- 프로세스는 환경(파일)을 변경 가능
+	- 해당 환경(파일)을 저장하여 이미지 생성
+
+- 이미지는 읽기전용 & 쓰기전용으로 두가지로 나뉨
+
+- 기본 베이스가되는 BaseImage를 통하여 Git또는 필요한 프로그램을 설치하여 Docker Commit을 통해 변경된 이미지를 저장할 수 있다.
+
+- Dockerfile
+	- RUN : 쉘 명령어 실행
+	- CMD : 컨테이너 기본 실행 명령어 (EntryPoint 인자로 사용)
+	- EXPOSE : 오픈되는 포트 정보
+	- ENV : 환경변수 설정
+	- ADD : 파일 또는 디렉토리 추가 URL/ZIP 사용 가능
+	- VOLUME : 외부 마운트 포인트 설정 
+	- USER : RUN, CMD, ENTRYPOINT를 실행하는 사용자
+	- WORKDIR : 작업 디렉토리 설정
+	- ARGS : 빌드타임 환경변수 설정
+	- LABEL : Key / Value 데이터
+	- ONBUILD : 다른 빌드의 베이스로 사용될 때 사용하는 명령어 
+	- COPY : 파일 또는 디렉토리 추가
+	- ENTRYPOINT : 컨테이너 기본 실행 명령어
+
+- DokcerFile 장점
+	- DockerFile을 통해 설치하게 되면 설치 기록을 명확하게 파악할 수 있어 관리하기 용이하고 도커 이미지를 만들 때 무엇이 설치되고 실행되었는지 알 수 있다.
+	- DokcerFile을 통해 해당 이미지를 업데이트하거나 수정하기에 용이하다.
+	
+	
+
