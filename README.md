@@ -117,19 +117,23 @@
 ```
 ## DokcerFile 장점
 ```
-	- DockerFile을 통해 설치하게 되면 설치 기록을 명확하게 파악할 수 있어 관리하기 용이하고 도커 이미지를 만들 때 무엇이 설치되고 실행되었는지 알 수 있다.
-	- DokcerFile을 통해 해당 이미지를 업데이트하거나 수정하기에 용이하다.	
-	- docker build -t <만들 도커 이미지 이름> <Dockerfile이 위치한 폴더 디렉토리>
+	- Dockerfile 이미지 빌드 프로세스를 확인 및 빌드할 때 사용
+	- Dockerfile을 통해 설치하게 되면 설치 기록을 명확하게 파악할 수 있어 관리하기 용이하다
+	- Dockerfile을 통해 도커 이미지를 만들 때 무엇이 설치되고 실행되었는지 알 수 있다.
+	- Dokcerfile을 통해 해당 이미지를 업데이트하거나 수정하기에 용이하다.	
+	- Dockerfile Build 방법
+		- docker build -t <만들 도커 이미지 이름> <Dockerfile이 위치한 폴더 디렉토리>
 ```
 
 
 ## Docker Hub (이미지 저장소)
 ```
-	- docker login
-	- docker push <image>
-	- docker pull <image>
-	- 무료 시 Public (한개만 Private)
-	- 유료 시 Private 가능
+	- docker image를 버전 관리하는 저장소
+	- docker login : dockerhub라는 이미지 저장소에 로그인
+	- docker push <image> : 이미지 remote에 올리기
+	- docker pull <image> : 이미지 remote에서 다운로드
+	- docker hub 사용할 때 무료 버전으로 사용 시 Public (한개만 Private)
+	- docker hub 사용할 때 유료 버전 사용 시 Private 가능
 ```
 	
 ## 배포하기
