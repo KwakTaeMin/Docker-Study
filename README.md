@@ -43,6 +43,7 @@
 
 
 > 도커 명령어
+```
 >	1. run 
 		- -d 백그라운드
 		- -t 호스트와 컨테이너와 포트를 연결해주는 
@@ -76,14 +77,16 @@
 		- network create app-network 식으로 만들면 다른 컨테이너와 연결이 쉽다
 >	11. v
 		- 로컬 데이터를 저장해놓을수 있다
-
+```
 >	12. docker compose
+```
 		- docker 명령어들을 yml 파일로 만들어 컨테이너 여러개 또한 관리가 가능	 
 		- docker-compose up
 		- docker-compose down 	
-
+```
 
 > 이미지
+```
 	- 레이어드 파일 시스템 기반
 	- AUFS, BTRFS, Overlayfs
 	- 이미지는 프로세스들가 실행되는 파일들의 집합 (환경)
@@ -91,8 +94,9 @@
 	- 해당 환경(파일)을 저장하여 이미지 생성
 	- 이미지는 읽기전용 & 쓰기전용으로 두가지로 나뉨
 	- 기본 베이스가되는 BaseImage를 통하여 Git또는 필요한 프로그램을 설치하여 Docker Commit을 통해 변경된 이미지를 저장할 수 있다.
-
+```
 > Dockerfile
+```
 	- RUN : 쉘 명령어 실행
 	- CMD : 컨테이너 실행 명령어 (EntryPoint 인자로 사용)
 	- EXPOSE : 오픈되는 포트 정보
@@ -108,25 +112,31 @@
 	- ENTRYPOINT : 컨테이너 기본 실행 명령어
 	- FROM : Base Image 설정 
 	- WORKDIR : 작업 디렉토리 지정
-
+```
 > DokcerFile 장점
+```
 	- DockerFile을 통해 설치하게 되면 설치 기록을 명확하게 파악할 수 있어 관리하기 용이하고 도커 이미지를 만들 때 무엇이 설치되고 실행되었는지 알 수 있다.
 	- DokcerFile을 통해 해당 이미지를 업데이트하거나 수정하기에 용이하다.	
 	- docker build -t <만들 도커 이미지 이름> <Dockerfile이 위치한 폴더 디렉토리>
+```
 
 
 > Docker Hub (이미지 저장소)
+```
 	- docker login
 	- docker push <image>
 	- docker pull <image>
 	- 무료 시 Public (한개만 Private)
 	- 유료 시 Private 가능
+```
 	
 > 배포하기
-	- docker run
-
+```
+	 - docker run
+```
 
 > 더보기 
+```
 	- 이미지 만들기 위한 쉘 스크립트 & 환경 변수 사용
 	- CI/CD 자동빌드, 자동배포, blue & green 배포 / 무중단 배포
 	- 모니터링 / 로그
@@ -134,3 +144,4 @@
 	- 보안
 	- 쿠버네티스
 	- 이스티오 서비스 매쉬(istio)
+```
