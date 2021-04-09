@@ -105,4 +105,31 @@ docker run -d \
 - 해당 인터페이스가 맞는 Dashboard 
 
 
-## 이제 불편하니 docker-compose.yml 파일로 만들어서 관리하자.
+## Monitoring docker-compose.yml 파일 생성 관리
+- Grafana에 볼륨 정보 추가(Dashboard나 계정 정보가 사라지지 않도록 볼륨 설정)
+```
+version: '2'
+
+services:
+  prometheus:
+    image: prom/prometheus
+    container_name: 'prometheus_1'
+    ports:
+    - "9090:9090"
+    volumes:
+    - /home/rtdadm/monitoring/prometheus/config:/etc/prometheus
+  grafana:
+    image: grafana/grafana:latest
+    container_name: 'grafana_1'
+    ports:
+    - "3000:3000"
+    volumes:
+    - /home/rtdadm/monitoring/grafana/data:/var/lib/grafan
+```
+
+## Monitoring System 실행 및 종료 
+```
+docker-compose up -d
+docker-compose down
+```
+
