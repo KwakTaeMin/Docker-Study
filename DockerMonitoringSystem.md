@@ -1,4 +1,4 @@
-# Docker Grafana 구축
+# Docker Monitering System 구축
 
 ## 사내 Grafana 구축 목적
 - IIS 모니터링 대시보드
@@ -29,3 +29,9 @@ docker ps
 ## 접속확인
 - http://{SERVER_IP}:3000
 - 아이디 admin / 패스워드 admin 입력 후 로그인 확인
+
+
+## Promethous Docker Image 다운로드
+```
+docker pull prom/prometheus
+```
