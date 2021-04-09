@@ -85,3 +85,13 @@ scrape_configs:
 - http://localhost:9182/metrics
 ![image](https://user-images.githubusercontent.com/11844343/114119281-4ecf9a00-9925-11eb-83d3-61ee0667de57.png)
 
+## Prometheus 도커 재실행 
+```
+docker stop {CONTAINER_ID}
+docker run -d \
+  -p 9090:9090 \
+  -v /home/rtdadm/monitoring/prometheus/config:/etc/prometheus \
+  prom/prometheus
+```
+
+## 이제 불편하니 docker-compose.yml 파일로 만들어서 관리하자.
