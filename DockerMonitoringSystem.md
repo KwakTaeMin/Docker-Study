@@ -93,5 +93,9 @@ docker run -d \
   -v /home/rtdadm/monitoring/prometheus/config:/etc/prometheus \
   prom/prometheus
 ```
+## Dashboard Import 
+- https://grafana.com/grafana/dashboards/6593/revisions
+- 해당 인터페이스가 맞는 Dashboard 
+
 
 ## 이제 불편하니 docker-compose.yml 파일로 만들어서 관리하자.
