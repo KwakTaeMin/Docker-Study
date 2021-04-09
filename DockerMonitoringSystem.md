@@ -5,10 +5,6 @@
 - Windows Server 모니터링 대시보드 
 - 문제 발생 시 Notification 할 수 있는 시스템 필요
 
-## 개인적인 목표
-- 도커 컨테이너 생성 및 관리 방법 (docker-compose.yml)
-- 도커 이미지 생성 관리 방법 (Dockerfile)
-
 ## Docker Grafana Image 다운로드 
 ```
 docker pull grafana/grafana
