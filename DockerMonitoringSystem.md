@@ -70,3 +70,8 @@ scrape_configs:
 
 ## Prometheus 접속 확인
 - http://{SERVER_IP}:9090
+
+
+## Grafana Datasource Prometheus 연결
+![image](https://user-images.githubusercontent.com/11844343/114117100-eb436d80-9920-11eb-9086-9178fedc6eac.png)
+
