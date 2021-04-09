@@ -93,7 +93,7 @@ docker run -d \
   -v /home/rtdadm/monitoring/prometheus/config:/etc/prometheus \
   prom/prometheus
 ```
-## Dashboard Import 
+## Grafana Dashboard Import 
 - https://grafana.com/grafana/dashboards/6593/revisions
 - 해당 인터페이스가 맞는 Dashboard 
 
