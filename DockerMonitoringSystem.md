@@ -85,7 +85,7 @@ scrape_configs:
 - http://localhost:9182/metrics
 ![image](https://user-images.githubusercontent.com/11844343/114119281-4ecf9a00-9925-11eb-83d3-61ee0667de57.png)
 
-## Prometheus Exporter 하는 서버 등록
+## Prometheus Window Exporter 서버를 prometheus.yml에 추가 등록
 ```
   - job_name: 'exporter_server'
     static_configs:
