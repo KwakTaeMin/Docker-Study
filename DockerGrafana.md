@@ -1,5 +1,10 @@
 # Docker Grafana 구축
 
+## 사내 Grafana 구축 목적
+- IIS 모니터링 대시보드
+- Windows Server 모니터링 대시보드 
+- 문제 발생 시 Notification 할 수 있는 시스템 필요
+
 ## Docker Grafana Image 다운로드 
 ```
 docker pull grafana/grafana
