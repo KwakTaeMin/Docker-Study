@@ -75,3 +75,13 @@ scrape_configs:
 ## Grafana Datasource Prometheus 연결
 ![image](https://user-images.githubusercontent.com/11844343/114117100-eb436d80-9920-11eb-9086-9178fedc6eac.png)
 
+
+## Prometheus Window Exporter 설치
+- https://github.com/prometheus-community/windows_exporter/releases
+- 해당 Windows 버전에 맞추어 설치 
+- Window Exporter는 9182 포트로 열린다.
+
+## Prometheus Window Exporter 설치 확인 
+- http://localhost:9182/metrics
+- ![image](https://user-images.githubusercontent.com/11844343/114119281-4ecf9a00-9925-11eb-83d3-61ee0667de57.png)
+
