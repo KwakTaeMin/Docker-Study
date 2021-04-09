@@ -120,7 +120,7 @@ services:
     ports:
     - "3000:3000"
     volumes:
-    - /home/rtdadm/monitoring/grafana/data:/var/lib/grafan
+    - /home/rtdadm/monitoring/grafana/data:/var/lib/grafana
 ```
 
 ## Monitoring System 실행 및 종료 
